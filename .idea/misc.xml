@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../Chat-master" value="1482331474093" />
+        <entry key="$PROJECT_DIR$/../FirstSpringMVC" value="1482824520675" />
+        <entry key="$PROJECT_DIR$/../firstWebProject" value="1482140590470" />
+        <entry key="$PROJECT_DIR$/../iocTest" value="2965473473355" />
+        <entry key="$PROJECT_DIR$/../mvc" value="2965650264381" />
+        <entry key="$PROJECT_DIR$/../ru.innopolis.uni.course3.task.v2" value="1481981769728" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
