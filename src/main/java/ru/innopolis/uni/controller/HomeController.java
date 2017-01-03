@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.entityDao.Product;
+import ru.innopolis.uni.model.service.CategoryService;
 import ru.innopolis.uni.model.service.CustomerService;
 import ru.innopolis.uni.model.service.ProductService;
 
@@ -21,6 +22,8 @@ public class HomeController {
     private static Logger log = LoggerFactory.getLogger(HomeController.class);
     @Autowired
     ProductService service;
+    @Autowired
+    CategoryService categoryService;
 
     @RequestMapping(value = "/home")
    public String home(Model model){
@@ -33,6 +36,7 @@ public class HomeController {
         System.out.println("error");
         return "error";
     }
+    model.addAttribute("categories", categoryService.getCategoriesMap());
     model.addAttribute("productsList", productsList);
     return "home";
    }

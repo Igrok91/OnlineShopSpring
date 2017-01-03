@@ -16,13 +16,13 @@
 	<!-- <import resource="dataSource.xml" />-->
 
 	<mvc:annotation-driven/>
-	<bean id = "productDao" class="ru.innopolis.uni.model.dao.impl.ProductDaoImpl"  scope="prototype">
+	<bean id = "productDao" class="ru.innopolis.uni.model.dao.impl.ProductDaoImpl" scope="prototype">
 
 	</bean>
-	<bean id = "customerDao" class="ru.innopolis.uni.model.dao.impl.CustomerDaoImpl" scope="prototype" >
+	<bean id = "customerDao" class="ru.innopolis.uni.model.dao.impl.CustomerDaoImpl" scope="prototype">
 	</bean>
 
-
+	<mvc:resources mapping="/resources/**" location="/resources/" />
 
 	<bean id="viewResolver"
 		  class="org.springframework.web.servlet.view.InternalResourceViewResolver" >

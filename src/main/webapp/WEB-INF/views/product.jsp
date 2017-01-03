@@ -6,14 +6,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>ShoppingKart</title>
-<link href="bootstrap/css/shop-homepae.css" rel="stylesheet" />
-<link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
-<link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
+<link href="resources/bootstrap/css/shop-homepae.css" rel="stylesheet" />
+<link href="resources/bootstrap/css/bootstrap.css" rel="stylesheet" />
+<link href="resources/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
 <link
 	href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css"
 	rel="stylesheet">
-<script src="../bootstrap/scripts/jquery-1.7.1.min.js"></script>
-<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="resources/bootstrap/scripts/jquery-1.7.1.min.js"></script>
+<script src="resources/bootstrap/js/bootstrap.js"></script>
 <style>
 body {
 	background-color: white;

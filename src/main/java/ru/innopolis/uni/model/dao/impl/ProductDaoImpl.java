@@ -39,7 +39,6 @@ public class ProductDaoImpl implements ProductDao {
         Statement ps = null;
         ResultSet rs = null;
         String sql;
-        System.out.println("succes");
         conn = DBConnection.getConnecton();
         System.out.println(conn == null);
         sql = "select * from products";
@@ -149,9 +148,7 @@ public class ProductDaoImpl implements ProductDao {
         PreparedStatement ps = null;
         ResultSet rs = null;
         String sql;
-        System.out.println("succes");
         conn = DBConnection.getConnecton();
-        System.out.println("yes");
         sql = "select idcategory, productCategory from category";
         categories = new ArrayList<Category>();
 

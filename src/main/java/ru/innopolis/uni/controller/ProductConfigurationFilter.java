@@ -9,6 +9,7 @@ import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.dao.impl.ProductDaoImpl;
 import ru.innopolis.uni.model.entityDao.Category;
 import ru.innopolis.uni.model.entityDao.SubCategory;
+import ru.innopolis.uni.model.service.ProductService;
 
 import javax.servlet.*;
 import java.io.IOException;
@@ -19,10 +20,10 @@ import java.util.List;
  * Created by Igor Ryabtsev on 28.12.2016.
  * Класс фильтра, который фильтрует подкатегории в соответствии с категориями
  */
-
+@Component
 public class ProductConfigurationFilter implements Filter {
-
-	ProductDaoImpl service;
+	@Autowired
+	ProductService service;
 	private static Logger log = LoggerFactory.getLogger(ProductConfigurationFilter.class);
 	private ServletContext context;
 
@@ -40,7 +41,9 @@ public class ProductConfigurationFilter implements Filter {
 
 		List<Category> categoryList = null;
 		try {
+			System.out.println("begin cat");
 			categoryList = service.getAllCategories();
+			System.out.println("end cat");
 		} catch (DataBaseException e) {
 			log.warn(e.message());
 		}

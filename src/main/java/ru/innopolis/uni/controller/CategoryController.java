@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.entityDao.Product;
+import ru.innopolis.uni.model.service.CategoryService;
 import ru.innopolis.uni.model.service.ProductService;
 
 import javax.servlet.http.HttpServlet;
@@ -28,6 +29,8 @@ public class CategoryController {
 
     @Autowired
     ProductService service;
+    @Autowired
+    CategoryService categoryService;
 @RequestMapping(value = "/category")
     public String getCategory(Model model, @RequestParam("subcat")String subCategory,
                               @RequestParam("categ")String categoryName){
@@ -59,6 +62,7 @@ public class CategoryController {
 
         }
         model.addAttribute("subCat", subCategory);
+        model.addAttribute("categories", categoryService.getCategoriesMap());
     return "category";
     }
 
@@ -75,6 +79,8 @@ public class CategoryController {
         session = req.getSession();
         session.setAttribute("product", product);
         session.setAttribute("productID", productId);
+
+        model.addAttribute("categories", categoryService.getCategoriesMap());
 
         model.addAttribute("productCategory",
                 product.getCategoryName().getCategoryid());

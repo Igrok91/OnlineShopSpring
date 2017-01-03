@@ -2,113 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8be76d4d-4e77-4925-b9e8-c5bf2a401277" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_6_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/root-context.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/CartController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/CategoryController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/HomeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/ProductConfigurationFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/servlet/CartServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/servlet/CategoryServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/servlet/CustomerServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/servlet/HomeServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/database/DBConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/CustomerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/ProductDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/daoException/DataBaseException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/impl/CustomerDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/entityDao/Category.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/entityDao/Order.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/entityDao/Product.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/entityDao/SubCategory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/entityDao/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/service/CustomerService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/service/ProductService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/service/cart/ShoppingCart.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/service/cart/ShoppingCartItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/servlet-context.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/commons-codec-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/commons-pool-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/jsoup-1.10.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/jsp-api-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/mockito-all-1.9.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/mysql-connector-java-6.0.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/slf4j-api-1.7.21.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/slf4j-log4j12-1.7.21.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/spring-aop-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/spring-beans-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/spring-context-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/spring-core-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/spring-expression-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/spring-jdbc-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/spring-tx-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/spring-web-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/lib/spring-webmvc-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/cart.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/category.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/checkout_unreg.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/error.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/final_checkout.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/home.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/homeT.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/login-register.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/orderconfirm.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/product.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/css/bootstrap-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/css/shop-homepage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/scripts/jquery-1.7.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/images/AEx.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/images/bag_icon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/images/cart.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/images/discover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/images/home.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/images/mastercard.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/images/payment.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/images/paypal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/images/product.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/exploded/onlineShop-1.0-SNAPSHOT.war/images/visa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/css/shop-homepage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/bootstrap/scripts/jquery-1.7.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/images/AEx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/images/bag_icon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/images/cart.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/images/discover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/images/home.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/images/mastercard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/images/payment.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/images/paypal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/images/product.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/images/visa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/controller/CategoryController.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/bootstrap-responsive.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/css/bootstrap-responsive.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/bootstrap-responsive.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/css/shop-homepage.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/shop-homepage.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/img/glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/img/glyphicons-halflings-white.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/img/glyphicons-halflings.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/img/glyphicons-halflings.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/scripts/jquery-1.7.1.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/scripts/jquery-1.7.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/AEx.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/AEx.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/bag_icon.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/bag_icon.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/cart.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/cart.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/discover.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/home.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/home.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/mastercard.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/mastercard.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/payment.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/payment.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/paypal.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/paypal.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/product.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/product.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/visa.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/visa.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/HomeController.class" afterPath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/HomeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/ProductConfigurationFilter.class" afterPath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/ProductConfigurationFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/servlet/HomeServlet.class" afterPath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/controller/servlet/HomeServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/daoException/DataBaseException.class" afterPath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/daoException/DataBaseException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.class" afterPath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/service/cart/ShoppingCart.class" afterPath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/ru/innopolis/uni/model/service/cart/ShoppingCart.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/controller/HomeController.class" afterPath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/controller/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/database/DBConnection.class" afterPath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/database/DBConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/dao/impl/CustomerDaoImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/dao/impl/CustomerDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/controller/ProductConfigurationFilter.class" afterPath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/controller/ProductConfigurationFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/controller/servlet/HomeServlet.class" afterPath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/controller/servlet/HomeServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/dao/daoException/DataBaseException.class" afterPath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/dao/daoException/DataBaseException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/service/cart/ShoppingCart.class" afterPath="$PROJECT_DIR$/build/classes/main/ru/innopolis/uni/model/service/cart/ShoppingCart.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/onlineShop-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/build/libs/onlineShop-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___ru_innopolis_uni___onlineShop_1_0_SNAPSHOT_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___ru_innopolis_uni___onlineShop_1_0_SNAPSHOT_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___ru_innopolis_uni___onlineShop_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___ru_innopolis_uni___onlineShop_1_0_SNAPSHOT_war__exploded_.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/onlineShop.iml" afterPath="$PROJECT_DIR$/.idea/modules/onlineShop.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/onlineShop_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/onlineShop_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/onlineShop_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/onlineShop_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/servlet-context.xml" afterPath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/classes/servlet-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/home.jsp" afterPath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/views/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/build/classes/artifacts/onlineShop/exploded/onlineShop-1.0-SNAPSHOT.war/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/servlet-context.xml" afterPath="$PROJECT_DIR$/build/resources/main/servlet-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CategoryController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CategoryController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/database/DBConnection.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/database/DBConnection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/ProductConfigurationFilter.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/ProductConfigurationFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/servlet-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/servlet-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="onlineShop.iws" />
@@ -160,21 +127,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CartController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CartController.java">
+      <file leaf-file-name="CategoryController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CategoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            <state relative-caret-position="325">
+              <caret line="82" column="77" selection-start-line="82" selection-start-column="77" selection-end-line="82" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CategoryController.java">
+      <file leaf-file-name="HomeServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/servlet/HomeServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+            <state relative-caret-position="181">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -183,28 +150,32 @@
       <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="204">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="25" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeT.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/homeT.jsp">
+      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="255">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
+      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/ProductService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="66" column="71" selection-start-line="66" selection-start-column="71" selection-end-line="66" selection-end-column="71" />
+            <state relative-caret-position="119">
+              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -213,18 +184,18 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="323">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category.jsp">
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-1052">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -233,34 +204,33 @@
       <file leaf-file-name="product.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-1428">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+              <folding>
+                <element signature="e#4490#4497#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/database/DBConnection.java">
+      <file leaf-file-name="category.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="-816">
+              <caret line="0" column="63" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -443,7 +413,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2966298664819" />
+        <entry key="$PROJECT_DIR$" value="2966447735225" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -549,9 +519,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/database/DBConnection.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/ProductConfigurationFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/servlet-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/CategoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CategoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product.jsp" />
       </list>
     </option>
   </component>
@@ -614,10 +593,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="onlineShop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -739,6 +714,10 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -763,6 +742,188 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="uni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlineShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlineShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entityDao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlineShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlineShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlineShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlineShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlineShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlineShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daoException" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlineShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlineShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -839,6 +1000,17 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../online_shop" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Igor\IdeaProjects\onlineShop\src\main\webapp" />
+      <recent name="C:\Users\Igor\IdeaProjects\onlineShop\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Igor\IdeaProjects\onlineShop\src\main\webapp\resources" />
+      <recent name="C:\Users\Igor\IdeaProjects\onlineShop\src\main\webapp\WEB-INF\views" />
+    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat">
     <configuration default="false" name="onlineShop [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -894,6 +1066,53 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <method />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -917,6 +1136,136 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -931,6 +1280,14 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -954,12 +1311,88 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="onlineShop" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -988,6 +1421,50 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
     <configuration default="false" name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.70" ALTERNATIVE_JRE_ENABLED="false">
@@ -1092,40 +1569,40 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3349000" />
+    <option name="totallyTimeSpent" value="10914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2859375" sideWeight="0.49369085" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18020834" sideWeight="0.50630915" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0609375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18020834" sideWeight="0.50630915" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09583333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1150,6 +1627,110 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/CustomerDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/entityDao/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/homeT.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/database/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="101" column="47" selection-start-line="101" selection-start-column="47" selection-end-line="101" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1269,65 +1850,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        <state relative-caret-position="204">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/database/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+        <state relative-caret-position="425">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/root-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1340,18 +1882,170 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/servlet/CartServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/ProductConfigurationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/dao/impl/ProductDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3094">
+          <caret line="194" column="25" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="25" />
+          <folding>
+            <marker date="1483448583434" expanded="true" signature="1427:1449" ph="select * fro... products" />
+            <marker date="1483448583434" expanded="true" signature="3179:3320" ph="select produ... products" />
+            <marker date="1483448583434" expanded="true" signature="4789:4837" ph="select idcat... category" />
+            <marker date="1483448583434" expanded="true" signature="6126:6202" ph="SELECT idsub... subcategory" />
+            <marker date="1483448583434" expanded="true" signature="7626:7768" ph="select idpro... products" />
+            <marker date="1483448583434" expanded="true" signature="9226:9369" ph="select idpro... products" />
+            <marker date="1483448583434" expanded="true" signature="10776:10835" ph="select categ... subcategory" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        <state relative-caret-position="323">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/servlet-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="66" column="71" selection-start-line="66" selection-start-column="71" selection-end-line="66" selection-end-column="71" />
+        <state relative-caret-position="-1052">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/model/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/servlet/HomeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/servlet/CustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-661">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/servlet/CategoryServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="25" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/innopolis/uni/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="82" column="77" selection-start-line="82" selection-start-column="77" selection-end-line="82" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1428">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#4490#4497#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816">
+          <caret line="0" column="63" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
           <folding />
         </state>
       </provider>
@@ -1361,5 +2055,95 @@
     <option value="$PROJECT_DIR$" />
     <option value="build" />
     <option value="clean" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Gradle : ru.innopolis.uni : onlineShop-1.0-SNAPSHOT.war (exploded)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31034482" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (onlineShop_main)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>onlineShop_main|onlineShop</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: commons-codec:commons-codec:1.9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
