@@ -76,9 +76,8 @@ public class CategoryController {
             log.warn(e.message());
             return "error";
         }
-        session = req.getSession();
-        session.setAttribute("product", product);
-        session.setAttribute("productID", productId);
+        req.getSession().setAttribute("product", product);
+        req.getSession().setAttribute("productID", productId);
 
         model.addAttribute("categories", categoryService.getCategoriesMap());
 

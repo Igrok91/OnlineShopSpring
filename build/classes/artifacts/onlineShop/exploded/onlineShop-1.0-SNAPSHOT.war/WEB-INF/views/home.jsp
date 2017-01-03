@@ -74,7 +74,7 @@
 					</ul></li>
 				<li class="dropdown"><c:choose>
 					<c:when test="${empty email}">
-						<a href="login-register.jsp"><b>Login/Register</b></a>
+						<a href="/login-register"><b>Login/Register</b></a>
 					</c:when>
 					<c:otherwise>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span

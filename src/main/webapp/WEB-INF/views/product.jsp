@@ -60,8 +60,8 @@ body {
 					data-toggle="dropdown" href="#"><span id="itemcount"
 						class="btn btn-default btn-sm"><i
 							class="icon-shopping-cart icon-red"></i> <c:set var="cartItems"
-								scope="session" value="${cart.numberOfItems}" /> <span
-							class="headerCartItemsCount"> <c:choose>
+								scope="session" value="${cart.numberOfItems}" />
+					<span class="headerCartItemsCount"> <c:choose>
 									<c:when test="${empty cartItems}">0
 							</c:when>
 									<c:otherwise>

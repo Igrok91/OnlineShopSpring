@@ -6,17 +6,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>ShoppingKart</title>
-<link href="bootstrap/css/shop-homepae.css" rel="stylesheet" />
-<link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
-<link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
+<link href="resourcesbootstrap/css/shop-homepae.css" rel="stylesheet" />
+<link href="resources/bootstrap/css/bootstrap.css" rel="stylesheet" />
+<link href="resources/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
 <link
 	href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css"
 	rel="stylesheet">
 <link
 	href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
 	rel="stylesheet">
-<script src="../bootstrap/scripts/jquery-1.7.1.min.js"></script>
-<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="resources/bootstrap/scripts/jquery-1.7.1.min.js"></script>
+<script src="resources/bootstrap/js/bootstrap.js"></script>
 <style>
 body {
 	background-color: white;
@@ -155,7 +155,7 @@ body {
 	<!--Header-->
 	<header> <nav class="navbar navbar-inverse" role="navigation">
 	<div class="navbar-inner">
-		<a class="brand" href="home.jsp">Online Shop</a>
+		<a class="brand" href="/home">Online Shop</a>
 		<div class="nav-collapse collapse">
 			<ul class="nav">
 				<c:forEach var="categories" items="${categories}">
@@ -296,7 +296,7 @@ body {
 							</c:forEach>
 							<tr>
 								<td>&nbsp;</td>
-								<td><a role="button" href="checkout_unreg.jsp"
+								<td><a role="button" href="/checkout"
 									id="checkoutbutton" class="btn btn-primary">Proceed to
 										Checkout
 										</a></td>

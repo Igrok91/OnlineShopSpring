@@ -13,24 +13,29 @@ import ru.innopolis.uni.model.entityDao.Product;
 import ru.innopolis.uni.model.service.ProductService;
 import ru.innopolis.uni.model.service.cart.ShoppingCart;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 /**
  * Created by innopolis on 29.12.2016.
  */
 @Controller
-@SessionAttributes("cart")
 public class CartController {
 
     @Autowired
     ProductService service;
     private static Logger log = LoggerFactory.getLogger(CartController.class);
+    @Autowired
+    HttpSession session;
 
     @RequestMapping(value = "/addProducts", method = RequestMethod.POST)
-    public String addProduct(Model model, @SessionAttribute("cart") ShoppingCart cart, @RequestParam("productID") int id) {
+    public String addProduct(Model model,  @SessionAttribute("productID") int id, HttpServletRequest request) {
+        ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
         if (cart == null) {
             cart = new ShoppingCart();
-            model.addAttribute("cart", cart);
+            request.getSession().setAttribute("cart", cart);
         }
-
+        System.out.println(id);
 
         Integer productID = new Integer(id);
 
@@ -45,6 +50,23 @@ public class CartController {
             cart.add(productID, p);
 
         }
-        return "redirect:/product";
+        return "redirect:/home";
+    }
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
+    public String updateProduct(Model model, @RequestParam("productid")int producr_id, @RequestParam("quantity") int quantity) {
+        Product product = null;
+        try {
+            product = (Product) service.getProductDetails(producr_id);
+        } catch (DataBaseException e) {
+            log.warn(e.message());
+           return "error";
+        }
+
+        ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
+        System.out.println(cart);
+        if (cart != null) {
+            cart.updateQuantity(producr_id, quantity, product);
+        }
+        return "redirect:/cart";
     }
 }
