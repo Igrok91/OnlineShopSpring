@@ -34,7 +34,7 @@ public class HomeController {
         return "error";
     }
     model.addAttribute("productsList", productsList);
-    return "homeT";
+    return "home";
    }
 
 
