@@ -17,17 +17,28 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 /**
- * Created by innopolis on 29.12.2016.
+ * Created by  Igor Ryabtsev on 29.12.2016.
+ * Класс  регулирует взаимодействие клиента с корзиной для покупок
+ * Позволяет добавить, изменить или удалить корзину
  */
 @Controller
 public class CartController {
 
+    private static Logger log = LoggerFactory.getLogger(CartController.class);
+
     @Autowired
     ProductService service;
-    private static Logger log = LoggerFactory.getLogger(CartController.class);
+
     @Autowired
     HttpSession session;
 
+    /**
+     * Пользователь добавляет продукт в корзину
+     * @param model
+     * @param id   id продукта
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "/addProducts", method = RequestMethod.POST)
     public String addProduct(Model model,  @SessionAttribute("productID") int id, HttpServletRequest request) {
         ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
@@ -35,7 +46,6 @@ public class CartController {
             cart = new ShoppingCart();
             request.getSession().setAttribute("cart", cart);
         }
-        System.out.println(id);
 
         Integer productID = new Integer(id);
 
@@ -52,6 +62,14 @@ public class CartController {
         }
         return "redirect:/home";
     }
+
+    /**
+     * Пользователь изменяет количство продуктов в корзине
+     * @param model
+     * @param producr_id id продукта
+     * @param quantity Количество продукта
+     * @return
+     */
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public String updateProduct(Model model, @RequestParam("productid")int producr_id, @RequestParam("quantity") int quantity) {
         Product product = null;
@@ -63,8 +81,7 @@ public class CartController {
         }
 
         ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
-        System.out.println(cart);
-        if (cart != null) {
+             if (cart != null) {
             cart.updateQuantity(producr_id, quantity, product);
         }
         return "redirect:/cart";

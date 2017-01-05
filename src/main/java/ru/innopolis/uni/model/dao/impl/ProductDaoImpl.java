@@ -20,6 +20,7 @@ import java.util.List;
  * пределяющие содержимое пользовательского интерфейса
  */
 
+
 public class ProductDaoImpl implements ProductDao {
     private static Logger log = LoggerFactory.getLogger(ProductDaoImpl.class);
     private List<Product> products = null;

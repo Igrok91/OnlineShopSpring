@@ -14,17 +14,19 @@ import java.util.Map;
 
 /**
  * Created by Igor on 03.01.2017.
+ * Класс определят сервис для получения данных по категориям из БД
  */
 @Service
 public class CategoryService {
+    private static Logger log = LoggerFactory.getLogger(CategoryService.class);
+
     @Autowired
     ProductService service;
-    private static Logger log = LoggerFactory.getLogger(CategoryService.class);
     public Map<String, List<SubCategory>> getCategoriesMap() {
         Map<String, List<SubCategory>> hashMap = new HashMap<>();
 
-
         List<Category> categoryList = null;
+
         try {
             categoryList = service.getAllCategories();
         } catch (DataBaseException e) {

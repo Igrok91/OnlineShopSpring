@@ -69,7 +69,7 @@
 					<ul class="dropdown-menu">
 						<c:url var="cart" value="/cart" />
 						<li><a tabindex="-1" href="${cart}">View Cart</a></li>
-						<li><a tabindex="-1" href="checkout_unreg.jsp">Checkout
+						<li><a tabindex="-1" href="/checkout">Checkout
 							Cart</a></li>
 					</ul></li>
 				<li class="dropdown"><c:choose>

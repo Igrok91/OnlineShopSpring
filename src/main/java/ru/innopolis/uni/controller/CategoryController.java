@@ -19,21 +19,34 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /**
- * Created by innopolis on 29.12.2016.
+ * Created by Igor Ryabtsev on 29.12.2016.
+ *  Класс  регулирует отображение названии категорий продуктов в пользовательском интерфейсе
  */
 @Controller
 public class CategoryController {
-    @Autowired
-    HttpSession session;
+
     private static Logger log = LoggerFactory.getLogger(CategoryController.class);
 
     @Autowired
+    HttpSession session;
+
+    @Autowired
     ProductService service;
+
     @Autowired
     CategoryService categoryService;
-@RequestMapping(value = "/category")
+
+    /**
+     * Пользователь запрашивает поиск продуктов по категории
+     * @param model
+     * @param subCategory Подкатегория
+     * @param categoryName
+     * @return
+     */
+    @RequestMapping(value = "/category")
     public String getCategory(Model model, @RequestParam("subcat")String subCategory,
                               @RequestParam("categ")String categoryName){
+
         if (categoryName != null) {
             List<Product> productsCategoryList = null;
             try {
@@ -66,6 +79,13 @@ public class CategoryController {
     return "category";
     }
 
+    /**
+     * Пользователь запрашивает информацию о продукте
+     * @param model
+     * @param productId
+     * @param req
+     * @return
+     */
     @RequestMapping(value = "/product")
     public String getProduct(Model model,
                               @RequestParam("productId")int productId, HttpServletRequest req){
@@ -87,6 +107,4 @@ public class CategoryController {
                 product.getSubCategory().getCategoryid());
         return "product";
     }
-
-
 }

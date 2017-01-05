@@ -212,7 +212,7 @@ body {
 	<div class="container">
 		<div class="breadcrumbs">
 			<ul class="breadcrumb">
-				<li class="active"><a href="home.jsp">Home</a> <span
+				<li class="active"><a href="/home">Home</a> <span
 					class="divider">/</span></li>
 				<li class="active">Checkout</li>
 			</ul>
@@ -225,7 +225,7 @@ body {
 							<tr>
 								<div class="hero-unit">
 									<h3>The Shopping Cart is Empty</h3>
-									<a href="home.jsp" class="btn btn-primary btn-large">Continue
+									<a href="/home" class="btn btn-primary btn-large">Continue
 										Shopping</a>
 								</div>
 							</tr>
@@ -300,7 +300,7 @@ body {
 									id="checkoutbutton" class="btn btn-primary">Proceed to
 										Checkout
 										</a></td>
-								<td><button id="continueshopping" id="continuebutton" href="home.jsp"
+								<td><button id="continueshopping" id="continuebutton" href="/home"
 										class="btn btn-primary pull-left">Continue Shopping</button>
 									<p id="subtotal_cart" class="lead">Total:</p></td>
 								<td class="cart_sub_total">

@@ -33,7 +33,7 @@ body {
 	<!--Header-->
 	<header> <nav class="navbar navbar-inverse" role="navigation">
 	<div class="navbar-inner">
-		<a class="brand" href="home.jsp">Online Shop</a>
+		<a class="brand" href="/home">Online Shop</a>
 
 		<div class="nav-collapse collapse">
 			<ul class="nav">
@@ -88,7 +88,8 @@ body {
 					<ul class="dropdown-menu">
 						<li><a tabindex="-1" href="/">Account</a></li>
 						<li><a tabindex="-1" href="/">Orders</a></li>
-						<li><a tabindex="-1" href="/">Sign out</a></li>
+                        <c:url var="logout" value="/logout" />
+                        <li><a tabindex="-1" href="${logout}">Sign out</a></li>
 					</ul></li>
 			</ul>
 		</div>
@@ -101,10 +102,10 @@ body {
 		<ul class="breadcrumb">
 			<li class="active"><c:url var="url" value="/category">
 					<c:param name="categ" value="${productCategory}" />
-				</c:url> <a href="${url}">${productCategory}</a> <span class="divider">/</span></li>
+				</c:url>${productCategory} <span class="divider">/</span></li>
 			<li class="active"><c:url var="url" value="/category">
 					<c:param name="subcat" value="${productSubCategory}" />
-				</c:url><a href="${url}">${productSubCategory}</a> <span class="divider">/</span></li>
+				</c:url>${productSubCategory} <span class="divider">/</span></li>
 			<li class="active">${product.productName}</li>
 		</ul>
 		<div class="row">
@@ -150,7 +151,7 @@ body {
 						<form method="post" action="addProducts" class="addCartForm">
 									<button class="btn btn-primary pull-left" id="addtocart">Add
 										to Cart</button>
-							<a href="#" class="btn" data-dismiss="modal">Continue
+							<a href="/home" class="btn" data-dismiss="modal">Continue
 								Shopping</a>
 							<a id="yesbutton" href="/checkout" class="btn btn-primary">Place
 								Order</a>

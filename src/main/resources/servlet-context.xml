@@ -12,8 +12,6 @@
 
 	<context:annotation-config/>
 	<context:component-scan base-package="ru.innopolis.uni.*"/>
-	<!-- import the datasource definitions file -->
-	<!-- <import resource="dataSource.xml" />-->
 
 	<mvc:annotation-driven/>
 	<bean id = "productDao" class="ru.innopolis.uni.model.dao.impl.ProductDaoImpl" scope="prototype">

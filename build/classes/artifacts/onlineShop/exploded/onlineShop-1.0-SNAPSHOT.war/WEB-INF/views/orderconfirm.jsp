@@ -33,7 +33,7 @@
 	<!--Header-->
 	<header> <nav class="navbar navbar-inverse" role="navigation">
 	<div class="navbar-inner">
-		<a class="brand" href="home.jsp">Online Shop</a> <a
+		<a class="brand" href="/home">Online Shop</a> <a
 			class="btn btn-navbar" data-toggle="collapse"
 			data-target=".nav-collapse"> <span class="icon-bar"></span> <span
 			class="icon-bar"></span> <span class="icon-bar"></span>

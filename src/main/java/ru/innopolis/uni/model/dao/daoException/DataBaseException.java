@@ -11,6 +11,6 @@ public class DataBaseException extends Exception {
     }
 
     public String message() {
-        return "Сообщение пользователю:Произошла ошибка запрос к базе данных";
+        return "Сообщение пользователю: Произошла ошибка запрос к базе данных";
     }
 }

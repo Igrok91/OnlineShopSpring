@@ -10,40 +10,79 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.service.CustomerService;
+import ru.innopolis.uni.model.service.cart.ShoppingCart;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * Created by Igor on 03.01.2017.
+ * Created by Igor Ryabtsev  on 03.01.2017.
+ * Класс  регулирует основные взаимодействия пользователя с интерфесом,
+ * такие как регистрация, вход, покупка
  */
 @Controller
 public class CustomerController {
     private static Logger log = LoggerFactory.getLogger(CustomerController.class);
+
     @Autowired
     HttpSession httpSession;
 
     @Autowired
     CustomerService customerService;
 
+    /**
+     * @param model
+     * @return Имя представления для пользовательской корзины
+     */
     @RequestMapping(value = "/cart")
     public String getCart(Model model) {
         return "cart";
     }
 
+    /**
+     * Выход из профиля
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "/logout")
     public String logout(HttpServletRequest request){
         request.getSession().invalidate();
         request.getSession().removeAttribute("email");
-        return "home";
+        return "redirect:/home";
     }
 
+    /**
+     * Проверяет регистрацию пользователя
+     * @return
+     */
     @RequestMapping(value = "/checkout")
     public String checkout() {
         return "checkout_unreg";
     }
 
+
+    @RequestMapping(value = "/final_checkout")
+    public String checkoutFinal() {
+        return "final_checkout";
+    }
+
+    /**
+     * Оплата продукта
+     * @return
+     */
+    @RequestMapping(value = "/purchase", method = RequestMethod.POST)
+    public String orderConfirm() {
+
+        ShoppingCart cart = (ShoppingCart) httpSession.getAttribute("cart");
+        cart.clear();
+        return "orderconfirm";
+    }
+
+    /**
+     * Пользователь регистрируется в системе
+     * @return
+     */
     @RequestMapping(value = "/login-register")
     public String login() {
         return "login-register";
@@ -58,7 +97,6 @@ public class CustomerController {
             log.warn(e.message());
             return "error";
         }
-        System.out.println(success + " register");
 
         if (success) {
             httpSession.setAttribute("regstatus", 1);
@@ -70,7 +108,15 @@ public class CustomerController {
         }
 
     }
-  @RequestMapping(value = "/login", method = RequestMethod.POST)
+
+    /**
+     * Пользователь входит в систему, проверка данных
+     * @param model
+     * @param email
+     * @param password
+     * @return
+     */
+     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String checkLogin(Model model, @RequestParam("inputEmail")String email, @RequestParam("password")String password){
         boolean flag = false;
         try {
@@ -80,7 +126,6 @@ public class CustomerController {
             return "error";
         }
         if (flag) {
-
             httpSession.setAttribute("email", email);
             return  "final_checkout";
         } else {

@@ -33,7 +33,7 @@
 	<!--Header-->
 	<header> <nav class="navbar navbar-inverse" role="navigation">
 	<div class="navbar-inner">
-		<a class="brand" href="home.jsp">Online Shop</a>
+		<a class="brand" href="/home">Online Shop</a>
 	</div>
 	</nav> </header>
 
@@ -123,7 +123,7 @@
 								</tr>
 							</c:forEach>
 							<tr>
-								<td colspan="3"><a role="button" href="final_checkout.jsp"
+								<td colspan="3"><a role="button" href="/final_checkout"
 									class="btn btn-primary btn-large">Continue to Payment</a></td>
 								<td colspan="2">
 									<div class="well">

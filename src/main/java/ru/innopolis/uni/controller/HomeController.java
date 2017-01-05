@@ -15,16 +15,23 @@ import ru.innopolis.uni.model.service.ProductService;
 import java.util.List;
 
 /**
- * Created by innopolis on 29.12.2016.
+ * Created by Igor Ryabtsev on 29.12.2016.
  */
 @Controller
 public class HomeController {
     private static Logger log = LoggerFactory.getLogger(HomeController.class);
+
     @Autowired
     ProductService service;
+
     @Autowired
     CategoryService categoryService;
 
+    /**
+     *
+     * @param model
+     * @return Возвращает домашнюю страницу
+     */
     @RequestMapping(value = "/home")
    public String home(Model model){
     log.info("Запрос домашней страницы");

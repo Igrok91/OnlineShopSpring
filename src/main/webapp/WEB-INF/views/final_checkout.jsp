@@ -48,7 +48,7 @@
 	<!--Header-->
 	<header> <nav class="navbar navbar-inverse" role="navigation">
 	<div class="navbar-inner">
-		<a class="brand" href="home.jsp">Online Shop</a>
+		<a class="brand" href="/home">Online Shop</a>
 		<div class="nav-collapse collapse">
 			<ul class="nav pull-right">
 				<li class="dropdown"><a id="cartitem" class="dropdown-toggle"
@@ -71,7 +71,7 @@
 					</ul></li>
 				<li class="dropdown"><c:choose>
 						<c:when test="${empty email}">
-							<a href="login.jsp"><span id="Login" class="btn btn-default btn-sm">Login</span></a>
+							<a href="/login"><span id="Login" class="btn btn-default btn-sm">Login</span></a>
 						</c:when>
 						<c:otherwise>
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -94,7 +94,7 @@
 	<div class="container">
 		<div class="breadcrumbs">
 			<ul class="breadcrumb">
-				<li class="active"><a href="home.jsp">Home</a>
+				<li class="active"><a href="/home">Home</a>
 					<span class="divider">/</span></li>
 				<li class="active">Checkout</li>
 			</ul>
@@ -207,14 +207,14 @@
 					<div class="span6">
 						<div class="well">
 							<ul id="payment-methods">
-								<li><img src="../images/mastercard.png" alt="Master Card"></li>
-								<li><img src="../images/visa.png" alt="Visa Express"></li>
-								<li><img src="../images/paypal.png" alt="Paypal"></li>
-								<li><img src="../images/AEx.png" alt="American Express"></li>
-								<li><img src="../images/discover.png" alt="Discover"></li>
+								<li><img src="resources/images/mastercard.png" alt="Master Card"></li>
+								<li><img src="resources/images/visa.png" alt="Visa Express"></li>
+								<li><img src="resources/images/paypal.png" alt="Paypal"></li>
+								<li><img src="resources/images/AEx.png" alt="American Express"></li>
+								<li><img src="resources/images/discover.png" alt="Discover"></li>
 							</ul>
 							</br>
-							<form action="purchase" method="post">
+							<form action="/purchase" method="post">
 								<fieldset>
 									<div class="control-group">
 										<label for="cardType">Select your Card</label>
@@ -247,7 +247,7 @@
 										</div>
 										<div class="controls">
 											<button role="submit" class="btn btn-primary">Purchase</button>
-											<a href="home.jsp" class="btn btn-primray">Reset</a>
+											<a href="/home" class="btn btn-primray">Reset</a>
 										</div>
 									</div>
 								</fieldset>
