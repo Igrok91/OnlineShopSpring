@@ -300,8 +300,8 @@ body {
 									id="checkoutbutton" class="btn btn-primary">Proceed to
 										Checkout
 										</a></td>
-								<td><button id="continueshopping" id="continuebutton" href="/home"
-										class="btn btn-primary pull-left">Continue Shopping</button>
+								<td><a role="button" id="continueshopping"  href="/home"
+										class="btn btn-primary">Continue Shopping</a>
 									<p id="subtotal_cart" class="lead">Total:</p></td>
 								<td class="cart_sub_total">
 									<p class="lead">

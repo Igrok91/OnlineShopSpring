@@ -86,4 +86,15 @@ public class CartController {
         }
         return "redirect:/cart";
     }
+
+    @RequestMapping(value = "/remove", method = RequestMethod.POST)
+    public String removeProduct(@RequestParam("pid")int producr_id) {
+
+        ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
+        if (cart != null) {
+            cart.remove(producr_id);
+            return "redirect:/cart";
+        }
+    return "home";
+    }
 }

@@ -15,7 +15,7 @@ import java.sql.SQLException;
 @Repository
 public class DBConnection {
     private static Logger log = LoggerFactory.getLogger(DBConnection.class);
-    public static final String DATABASE_URL = "jdbc:mysql://localhost:3306/online_shop";
+    public static final String DATABASE_URL = "jdbc:mysql://localhost:3306/online_shop?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private static Connection conn;
 
     private DBConnection() {
@@ -23,7 +23,7 @@ public class DBConnection {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(
                     DATABASE_URL, "root",
-                    "root");
+                    "Sparta1991");
         } catch (ClassNotFoundException e) {
             log.warn(e.getMessage());
         } catch (SQLException e) {

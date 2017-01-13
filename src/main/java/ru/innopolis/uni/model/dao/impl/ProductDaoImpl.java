@@ -48,7 +48,6 @@ public class ProductDaoImpl implements ProductDao {
         try {
             ps = conn.createStatement();
             rs = ps.executeQuery(sql);
-            System.out.println("sql");
 
             while (rs.next()) {
                 SubCategory subCategory = new SubCategory();
