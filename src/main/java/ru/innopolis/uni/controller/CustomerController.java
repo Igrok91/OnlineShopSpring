@@ -56,7 +56,7 @@ public class CustomerController {
      * Проверяет регистрацию пользователя
      * @return
      */
-    @RequestMapping(value = "/checkout")
+    @RequestMapping(value = "/checkout", method = {RequestMethod.POST, RequestMethod.GET})
     public String checkout() {
         return "checkout_unreg";
     }
