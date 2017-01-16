@@ -37,17 +37,22 @@ public class CustomerDaoImpl implements CustomerDao {
             conn = DBConnection.getConnecton();
             String sql = "insert into user(password, email) values(?,?)";
             String sqlS = "insert into users(username, password) values(?,?)";
+            String sqlRole = "insert into user_roles(username,role) values(?,?)";
             ps = conn.prepareStatement(sql);
             ps.setString(2, email);
             ps.setString(1, password);
-
 
             int result = ps.executeUpdate();
             ps = conn.prepareStatement(sqlS);
             ps.setString(2, password);
             ps.setString(1, email);
             int resultS = ps.executeUpdate();
-            if (result > 0 && resultS > 0) {
+
+            ps = conn.prepareStatement(sqlRole);
+            ps.setString(2, "ROLE_USER");
+            ps.setString(1, email);
+            int resultRole = ps.executeUpdate();
+            if (result > 0 && resultS > 0 &&resultRole > 0) {
                 return true;
             }
         } catch (Exception e) {

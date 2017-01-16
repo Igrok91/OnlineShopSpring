@@ -2,6 +2,7 @@ package ru.innopolis.uni.model.service;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import ru.innopolis.uni.model.dao.CustomerDao;
@@ -16,6 +17,8 @@ import ru.innopolis.uni.model.dao.impl.CustomerDaoImpl;
 public class CustomerService implements CustomerDao {
     @Autowired
     private CustomerDaoImpl customerDao;
+    @Autowired
+    private BCryptPasswordEncoder bcryptEncoder;
 
     public CustomerService(){
 
@@ -23,12 +26,12 @@ public class CustomerService implements CustomerDao {
     @Override
     public boolean registerCustomer(String email, String password)  throws DataBaseException {
 
-        return customerDao.registerCustomer(email, crypt(password));
+        return customerDao.registerCustomer(email,bcryptEncoder.encode(password));
     }
 
     @Override
     public boolean verifyUser(String email, String password) throws DataBaseException {
-        return customerDao.verifyUser(email,crypt(password));
+        return customerDao.verifyUser(email,bcryptEncoder.encode(password));
     }
 
     private String crypt(String password) {
