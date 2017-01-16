@@ -33,5 +33,9 @@
 		<filter-name>springSecurityFilterChain</filter-name>
 		<url-pattern>/checkout/*</url-pattern>
 	</filter-mapping>
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/login2/*</url-pattern>
+	</filter-mapping>
 
 </web-app>

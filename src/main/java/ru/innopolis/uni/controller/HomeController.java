@@ -32,7 +32,7 @@ public class HomeController {
      * @param model
      * @return Возвращает домашнюю страницу
      */
-    @RequestMapping(value = {"/home", "/checkout/welcome"})
+    @RequestMapping(value = {"/home", "/welcome"})
    public String home(Model model){
     log.info("Запрос домашней страницы");
     List<Product> productsList = null;

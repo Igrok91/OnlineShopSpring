@@ -102,7 +102,7 @@ public class CartController {
         }
     return "home";
     }
-    @RequestMapping(value = "/checkout/login2", method = {RequestMethod.POST, RequestMethod.GET})
+    @RequestMapping(value = "/login2", method = {RequestMethod.POST, RequestMethod.GET})
     public ModelAndView login(@RequestParam(value = "error", required = false) String error,
                               @RequestParam(value = "logout", required = false) String logout) {
 
@@ -119,18 +119,18 @@ public class CartController {
         return model;
 
     }
-    @RequestMapping(value = "/checkout/error2", method = {RequestMethod.POST, RequestMethod.GET})
+    @RequestMapping(value = "/error2", method = {RequestMethod.POST, RequestMethod.GET})
     public ModelAndView accesssDenied() {
 
         ModelAndView model = new ModelAndView();
 
-        //check if user is login
+        /*//check if user is login
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         if (!(auth instanceof AnonymousAuthenticationToken)) {
             UserDetails userDetail = (UserDetails) auth.getPrincipal();
             model.addObject("username", userDetail.getUsername());
         }
-
+*/
         model.setViewName("error");
         return model;
 

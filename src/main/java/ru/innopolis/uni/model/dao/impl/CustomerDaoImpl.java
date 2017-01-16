@@ -43,7 +43,7 @@ public class CustomerDaoImpl implements CustomerDao {
 
 
             int result = ps.executeUpdate();
-            ps = conn.prepareStatement(sql);
+            ps = conn.prepareStatement(sqlS);
             ps.setString(2, password);
             ps.setString(1, email);
             int resultS = ps.executeUpdate();
