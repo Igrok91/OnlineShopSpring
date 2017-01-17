@@ -35,7 +35,11 @@
 	</filter-mapping>
 	<filter-mapping>
 		<filter-name>springSecurityFilterChain</filter-name>
-		<url-pattern>/login2/*</url-pattern>
+		<url-pattern>/login-register/*</url-pattern>
 	</filter-mapping>
+<!--	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/login/*</url-pattern>
+	</filter-mapping>-->
 
 </web-app>

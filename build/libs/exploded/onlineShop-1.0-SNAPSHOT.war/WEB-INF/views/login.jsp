@@ -68,7 +68,7 @@
 					</c:choose>				
 				</c:when>
 				<c:otherwise>
-					<c:redirect url="/checkout"></c:redirect>
+					<c:redirect url="/login-register"></c:redirect>
 				</c:otherwise>
 			</c:choose>
 			<div class="row">
@@ -80,7 +80,7 @@
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Email</label>
 								<div class="controls">
-									<input class="span3" type="text" name="inputEmail"
+									<input class="span3" type="text" name="username"
 										id="inputEmail" placeholder="E-mail Address">
 								</div>
 							</div>

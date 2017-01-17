@@ -3,6 +3,10 @@ package ru.innopolis.uni.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AnonymousAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -57,7 +61,12 @@ public class CustomerController {
      * @return
      */
     @RequestMapping(value = "/checkout", method = {RequestMethod.POST, RequestMethod.GET})
-    public String checkout() {
+    public String checkout(Model model) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        if (!(auth instanceof AnonymousAuthenticationToken)) {
+            UserDetails userDetail = (UserDetails) auth.getPrincipal();
+            httpSession.setAttribute("email", userDetail.getUsername());
+        }
         return "checkout_unreg";
     }
 
@@ -100,8 +109,8 @@ public class CustomerController {
 
         if (success) {
             httpSession.setAttribute("regstatus", 1);
-            model.addAttribute("regStatus", "Success");
-            return "login";
+            httpSession.setAttribute("regStatus", "Success");
+            return "redirect:/login-register";
         } else {
             model.addAttribute("regStatus", "Fail");
             return "checkout_unreg";
@@ -116,8 +125,9 @@ public class CustomerController {
      * @param password
      * @return
      */
-     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String checkLogin(Model model, @RequestParam("inputEmail")String email, @RequestParam("password")String password){
+     @RequestMapping(value = "/login", method = {RequestMethod.POST, RequestMethod.GET})
+    public String checkLogin(Model model, @RequestParam(value = "username")String email ,
+                             @RequestParam(value="password")String password){
         boolean flag = false;
         try {
             flag = customerService.verifyUser(email, password);

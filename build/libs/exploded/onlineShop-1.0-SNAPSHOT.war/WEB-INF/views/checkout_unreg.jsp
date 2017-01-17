@@ -42,13 +42,13 @@
 	<div class="container">
 		<div class="breadcrumbs">
 			<ul class="breadcrumb">
-				<li class="active"><a href="home.jsp">Home</a> <span
+				<li class="active"><a href="/home">Home</a> <span
 					class="divider">/</span></li>
 				<li class="active">Checkout</li>
 			</ul>
 		</div>
 		<c:choose>
-			<c:when test="${cart.numberOfItems == 0}">
+			<c:when test="${empty cart}">
 				<table class="table table-condensed">
 					<tbody>
 						<tr>
@@ -65,7 +65,7 @@
 			<c:otherwise>
 				<c:choose>
 					<c:when test="${empty email}">
-						<c:redirect url="/login-register"/>
+						<c:redirect url="/checkout"/>
 					</c:when>
 					<c:otherwise></c:otherwise>
 				</c:choose>

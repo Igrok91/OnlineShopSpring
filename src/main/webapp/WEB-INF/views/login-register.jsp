@@ -87,12 +87,26 @@
 				<div class="span1">&nbsp;</div>
 				<div class="span5">
 					<div class="well">
+						<c:choose>
+							<c:when test="${regstatus==1}">
+								<c:choose>
+									<c:when test="${regStatus.equals('Success')}">
+										<h3>Registration Successful.Please Login to complete the
+											transaction.</h3>
+									</c:when>
+									<c:otherwise>
+										<h3>Invalid Email/Password.Please Login with valid
+											credentials.</h3>
+									</c:otherwise>
+								</c:choose>
+							</c:when>
+						</c:choose>
 						<h5>ALREADY REGISTERED? LOGIN HERE</h5>
-						<form action="login" method="post">
+						<form action="/checkout/j_spring_security_check" method="post">
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Email</label>
 								<div class="controls">
-									<input class="span3" type="text" required  name="inputEmail"
+									<input class="span3" type="text"   name="username"
 										id="inputEmail" placeholder="E-mail Address">
 								</div>
 							</div>
@@ -109,6 +123,9 @@
 									<a href="forgetpass.html">Forgot password?</a>
 								</div>
 							</div>
+							<input type="hidden" name="${_csrf.parameterName}"
+								   value="${_csrf.token}" />
+
 						</form>
 					</div>
 				</div>
