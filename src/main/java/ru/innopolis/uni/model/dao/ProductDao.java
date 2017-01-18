@@ -37,7 +37,7 @@ public interface ProductDao {
 
 
     /**
-     * Method to get all the available Subcategories under a Category
+     * Method to get all the available Subcategories under a ECategory
      * @param category
      * @return List of subcategory
      * @throws DataBaseException
@@ -53,7 +53,7 @@ public interface ProductDao {
     List<Product> getProductBySubCategory(String subCategory) throws DataBaseException;
 
     /**
-     * Method to get all the Products based on specified Category
+     * Method to get all the Products based on specified ECategory
      * @param category
      * @return
      * @throws DataBaseException
@@ -61,10 +61,10 @@ public interface ProductDao {
     List<Product> getProductByCategory(String category) throws DataBaseException;
 
     /**
-     * Method to get Product Category
-     * based on Sub Category
+     * Method to get Product ECategory
+     * based on Sub ECategory
      * @param subCategory
-     * @return Name of Category
+     * @return Name of ECategory
      * @throws DataBaseException
      */
     String getCategoryBySubCategory(String subCategory) throws DataBaseException;

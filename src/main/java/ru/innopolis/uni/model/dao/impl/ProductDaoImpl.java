@@ -2,14 +2,15 @@ package ru.innopolis.uni.model.dao.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Repository;
 import ru.innopolis.uni.database.DBConnection;
 import ru.innopolis.uni.model.dao.ProductDao;
 import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.entityDao.Category;
 import ru.innopolis.uni.model.entityDao.Product;
 import ru.innopolis.uni.model.entityDao.SubCategory;
+import ru.innopolis.uni.model.entityDao.entityJPA.ECategory;
 
+import javax.persistence.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +28,9 @@ public class ProductDaoImpl implements ProductDao {
     private List<Category> categories = null;
     private List<SubCategory> subCategories = null;
     private String categoryName;
+
+    private static EntityManagerFactory emf =
+            Persistence.createEntityManagerFactory("persistenceUnit");
 
 
     /**
@@ -96,7 +100,7 @@ public class ProductDaoImpl implements ProductDao {
         String sql;
         conn = DBConnection.getConnecton();
         Product p = new Product();
-        Category cat = new Category();
+        ru.innopolis.uni.model.entityDao.Category cat = new ru.innopolis.uni.model.entityDao.Category();
         SubCategory sub = new SubCategory();
         sql = "select productName,productPrice,description,categoryName,subCategory," +
                 "productManufacturer from products where idproduct=?";
@@ -144,19 +148,31 @@ public class ProductDaoImpl implements ProductDao {
      */
     @Override
     public List<Category> getAllCategories()  throws DataBaseException {
-        Connection conn = null;
+
+        EntityManager em = emf.createEntityManager();
+        String sql = "select * from category";
+        List<ECategory> list = em.createNamedQuery("findAllCategory",ECategory.class).getResultList();
+
+        categories = new ArrayList<Category>();
+       for (ECategory e : list) {
+
+            Category c = new Category(e.getProductCategory());
+            c.setCategoryid(e.getIdcategory());
+            categories.add(c);
+        }
+       /* Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
         String sql;
         conn = DBConnection.getConnecton();
         sql = "select idcategory, productCategory from category";
-        categories = new ArrayList<Category>();
+        categories = new ArrayList<ECategory>();
 
         try {
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()) {
-                Category c = new Category(rs.getString("productCategory"));
+                ECategory c = new ECategory(rs.getString("productCategory"));
                 c.setCategoryid(rs.getInt("idcategory"));
                 categories.add(c);
             }
@@ -174,20 +190,20 @@ public class ProductDaoImpl implements ProductDao {
             } catch (SQLException e) {
                 log.warn(e.getMessage());
             }
-        }
+        }*/
         return categories;
     }
 
     //
 
     /**
-     * Method to get all the available Subcategories under a Category
+     * Method to get all the available Subcategories under a ECategory
      * @param category
      * @return List of subcategory
      * @throws DataBaseException
      */
     @Override
-    public List<SubCategory> getSubCategory(Category category) throws DataBaseException  {
+    public List<SubCategory> getSubCategory(ru.innopolis.uni.model.entityDao.Category category) throws DataBaseException  {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -276,7 +292,7 @@ public class ProductDaoImpl implements ProductDao {
     }
 
     /**
-     * Method to get all the Products based on specified Category
+     * Method to get all the Products based on specified ECategory
      * @param category
      * @return
      * @throws DataBaseException
@@ -296,7 +312,7 @@ public class ProductDaoImpl implements ProductDao {
             ps.setString(1, category);
             rs = ps.executeQuery();
             while (rs.next()) {
-                Category cat = new Category();
+                ru.innopolis.uni.model.entityDao.Category cat = new ru.innopolis.uni.model.entityDao.Category();
                 cat.setProductCategory(rs.getString(5));
                 Product p = new Product(rs.getInt(1), rs.getString(2),
                         rs.getDouble(3), rs.getString(4),cat ,
@@ -322,10 +338,10 @@ public class ProductDaoImpl implements ProductDao {
 
 
     /**
-     * Method to get Product Category
-     * based on Sub Category
+     * Method to get Product ECategory
+     * based on Sub ECategory
      * @param subCategory
-     * @return Name of Category
+     * @return Name of ECategory
      * @throws DataBaseException
      */
     @Override

@@ -2,7 +2,6 @@
 
          import org.junit.Before;
          import org.junit.Test;
-         import org.mockito.Mock;
          import ru.innopolis.uni.model.dao.ProductDao;
          import ru.innopolis.uni.model.entityDao.Category;
          import ru.innopolis.uni.model.entityDao.Product;
@@ -39,11 +38,11 @@ public class ProductDaoImplTest {
         assertEquals(1,product.getProductId());
     }
 
-    @Test
+ /*   @Test
     public void getAllCategories() throws Exception {
         List<Category> list = productDao.getAllCategories();
         assertNotNull(list);
-    }
+    }*/
 
     @Test
     public void getSubCategory() throws Exception {
