@@ -9,8 +9,18 @@
     <persistence-unit name="persistenceUnit"  transaction-type="RESOURCE_LOCAL">
 
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <mapping-file>ru/innopolis/uni/model/entityDao/pojo/Category.xml</mapping-file>
+        <mapping-file>ru/innopolis/uni/model/entityDao/pojo/Order.xml</mapping-file>
+        <mapping-file>ru/innopolis/uni/model/entityDao/pojo/Products.xml</mapping-file>
+        <mapping-file>ru/innopolis/uni/model/entityDao/pojo/Subcategory.xml</mapping-file>
+        <mapping-file>ru/innopolis/uni/model/entityDao/pojo/User.xml</mapping-file>
 
         <class>ru.innopolis.uni.model.entityDao.entityJPA.ECategory</class>
+        <class>ru.innopolis.uni.model.entityDao.entityJPA.CategoryEntity</class>
+        <class>ru.innopolis.uni.model.entityDao.entityJPA.OrderEntity</class>
+        <class>ru.innopolis.uni.model.entityDao.entityJPA.ProductsEntity</class>
+        <class>ru.innopolis.uni.model.entityDao.entityJPA.SubcategoryEntity</class>
+        <class>ru.innopolis.uni.model.entityDao.entityJPA.UserEntity</class>
 
         <properties>
           <!--  <property name="javax.persistence.schema-generation-action" value="drop-and-create"/>-->
@@ -19,6 +29,9 @@
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/online_shop?serverTimezone=UTC"/>
             <property name="javax.persistence.jdbc.user" value="root" />
             <property name="javax.persistence.jdbc.password" value="Sparta1991" />
+            <property name="eclipselink.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/online_shop?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
         </properties>
     </persistence-unit>
 

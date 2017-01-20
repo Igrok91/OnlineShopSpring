@@ -11,14 +11,17 @@
 
 
 	<context:annotation-config/>
-	<context:component-scan base-package="ru.innopolis.uni.*"/>
-
+	<context:component-scan base-package="ru.innopolis.uni"/>
 	<mvc:annotation-driven/>
 	<bean id = "productDao" class="ru.innopolis.uni.model.dao.impl.ProductDaoImpl" scope="prototype">
-
 	</bean>
+
 	<bean id = "customerDao" class="ru.innopolis.uni.model.dao.impl.CustomerDaoImpl" scope="prototype">
 	</bean>
+<!--
+	<bean id = "orica" class="ru.innopolis.uni.model.mapper.MapperFact" scope="prototype">
+	</bean>
+-->
 
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 

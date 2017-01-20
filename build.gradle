@@ -4,6 +4,7 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'war'
 
+
 sourceCompatibility = 1.8
 
 repositories {
@@ -40,5 +41,6 @@ dependencies {
     compile group: 'org.hibernate', name: 'hibernate-validator', version: '5.3.4.Final'
     compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '1.10.6.RELEASE'
     compile group: 'org.springframework', name: 'spring-orm', version: '4.3.5.RELEASE'
+    compile group: 'ma.glasnost.orika', name: 'orika-core', version: '1.5.0'
 
 }

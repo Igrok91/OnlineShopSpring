@@ -5,15 +5,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import ru.innopolis.uni.model.dao.daoException.DataBaseException;
-import ru.innopolis.uni.model.entityDao.Product;
+import ru.innopolis.uni.model.entityDao.pojo.Products;
 import ru.innopolis.uni.model.service.CategoryService;
 import ru.innopolis.uni.model.service.ProductService;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
@@ -45,10 +43,10 @@ public class CategoryController {
      */
     @RequestMapping(value = "/category")
     public String getCategory(Model model, @RequestParam("subcat")String subCategory,
-                              @RequestParam("categ")String categoryName){
+                              @RequestParam("categ")String categoryName) throws Exception {
 
         if (categoryName != null) {
-            List<Product> productsCategoryList = null;
+            List<Products> productsCategoryList = null;
             try {
                 productsCategoryList = service.getProductByCategory(categoryName);
             } catch (DataBaseException e) {
@@ -60,7 +58,7 @@ public class CategoryController {
 
         // Если пользователь запрашивает поиск в подкатегории
         if (subCategory != null) {
-            List<Product> categoryProducts = null;
+            List<Products> categoryProducts = null;
             String cat = null;
             try {
                 categoryProducts = service.getProductBySubCategory(subCategory);
@@ -88,10 +86,10 @@ public class CategoryController {
      */
     @RequestMapping(value = "/product")
     public String getProduct(Model model,
-                              @RequestParam("productId")int productId, HttpServletRequest req){
-        Product product = null;
+                              @RequestParam("productId")int productId, HttpServletRequest req) throws Exception {
+        Products product = null;
         try {
-            product = (Product) service.getProductDetails(productId);
+            product = (Products) service.getProductDetails(productId);
         } catch (DataBaseException e) {
             log.warn(e.message());
             return "error";
@@ -101,10 +99,10 @@ public class CategoryController {
 
         model.addAttribute("categories", categoryService.getCategoriesMap());
 
-        model.addAttribute("productCategory",
-                product.getCategoryName().getCategoryid());
+     model.addAttribute("productCategory",
+                product.getCategoryByCategoryName().getIdcategory());
         model.addAttribute("productSubCategory",
-                product.getSubCategory().getCategoryid());
+                product.getSubcategoryBySubCategory().getIdsubCategory());
         return "product";
     }
 }

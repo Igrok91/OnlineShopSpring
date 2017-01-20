@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.innopolis.uni.model.dao.impl.ProductDaoImplTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-01-18T20:15:04" hostname="DESKTOP-FBGHD84" time="2.76">
+<testsuite name="ru.innopolis.uni.model.dao.impl.ProductDaoImplTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-01-19T15:50:13" hostname="DESKTOP-FBGHD84" time="7.346">
   <properties/>
-  <testcase name="getAllProducts" classname="ru.innopolis.uni.model.dao.impl.ProductDaoImplTest" time="2.595"/>
-  <testcase name="getProductByCategory" classname="ru.innopolis.uni.model.dao.impl.ProductDaoImplTest" time="0.085"/>
-  <testcase name="getSubCategory" classname="ru.innopolis.uni.model.dao.impl.ProductDaoImplTest" time="0.073"/>
-  <testcase name="getProductDetails" classname="ru.innopolis.uni.model.dao.impl.ProductDaoImplTest" time="0.002"/>
-  <testcase name="getProductBySubCategory" classname="ru.innopolis.uni.model.dao.impl.ProductDaoImplTest" time="0.002"/>
-  <system-out><![CDATA[false
+  <testcase name="getAllProducts" classname="ru.innopolis.uni.model.dao.impl.ProductDaoImplTest" time="7.241"/>
+  <testcase name="getProductByCategory" classname="ru.innopolis.uni.model.dao.impl.ProductDaoImplTest" time="0.059"/>
+  <testcase name="getSubCategory" classname="ru.innopolis.uni.model.dao.impl.ProductDaoImplTest" time="0.014"/>
+  <testcase name="getProductDetails" classname="ru.innopolis.uni.model.dao.impl.ProductDaoImplTest" time="0.02"/>
+  <testcase name="getProductBySubCategory" classname="ru.innopolis.uni.model.dao.impl.ProductDaoImplTest" time="0.01"/>
+  <system-out><![CDATA[[EL Info]: transaction: 2017-01-19 18:50:17.362--ServerSession(1813122158)--property eclipselink.jdbc.driver is deprecated, property javax.persistence.jdbc.driver should be used instead.
+[EL Info]: transaction: 2017-01-19 18:50:17.398--ServerSession(1813122158)--property eclipselink.jdbc.url is deprecated, property javax.persistence.jdbc.url should be used instead.
+false
 ]]></system-out>
   <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
-Wed Jan 18 23:15:07 MSK 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Jan 19 18:50:19 MSK 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
 ]]></system-err>
 </testsuite>

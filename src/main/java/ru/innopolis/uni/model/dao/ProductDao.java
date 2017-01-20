@@ -1,9 +1,9 @@
 package ru.innopolis.uni.model.dao;
 
 import ru.innopolis.uni.model.dao.daoException.DataBaseException;
-import ru.innopolis.uni.model.entityDao.Category;
-import ru.innopolis.uni.model.entityDao.Product;
-import ru.innopolis.uni.model.entityDao.SubCategory;
+import ru.innopolis.uni.model.entityDao.pojo.Category;
+import ru.innopolis.uni.model.entityDao.pojo.Products;
+import ru.innopolis.uni.model.entityDao.pojo.Subcategory;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public interface ProductDao {
      * @return List of product
      * @throws DataBaseException
      */
-    List<Product> getAllProducts() throws DataBaseException;
+    List<Products> getAllProducts() throws DataBaseException;
 
     /**
      *  Method to get the required Product Details
@@ -25,7 +25,7 @@ public interface ProductDao {
      * @return Product
      * @throws DataBaseException
      */
-    Product getProductDetails(int idproduct) throws DataBaseException;
+    Products getProductDetails(int idproduct) throws DataBaseException;
 
 
     /**
@@ -42,7 +42,7 @@ public interface ProductDao {
      * @return List of subcategory
      * @throws DataBaseException
      */
-    List<SubCategory> getSubCategory(Category category) throws DataBaseException;
+    List<Subcategory> getSubCategory(Category category) throws DataBaseException;
 
     /**
      * Method to get all the Products based on specified SubCategory
@@ -50,7 +50,7 @@ public interface ProductDao {
      * @return
      * @throws DataBaseException
      */
-    List<Product> getProductBySubCategory(String subCategory) throws DataBaseException;
+    List<Products> getProductBySubCategory(String subCategory) throws DataBaseException;
 
     /**
      * Method to get all the Products based on specified ECategory
@@ -58,7 +58,7 @@ public interface ProductDao {
      * @return
      * @throws DataBaseException
      */
-    List<Product> getProductByCategory(String category) throws DataBaseException;
+    List<Products> getProductByCategory(String category) throws DataBaseException;
 
     /**
      * Method to get Product ECategory

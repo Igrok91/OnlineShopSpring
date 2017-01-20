@@ -1,6 +1,6 @@
 package ru.innopolis.uni.model.service.cart;
 
-import ru.innopolis.uni.model.entityDao.Product;
+import ru.innopolis.uni.model.entityDao.pojo.Products;
 
 import javax.servlet.jsp.PageContext;
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ public class ShoppingCart {
      * @param productID
      * @param p
      */
-    public synchronized void add(int productID, Product p) {
+    public synchronized void add(int productID, Products p) {
         ShoppingCartItem newItem = new ShoppingCartItem(p);
         itemsMap.put(productID, newItem);
     }
@@ -42,7 +42,7 @@ public class ShoppingCart {
      * @param p
      */
     public synchronized void updateQuantity(int productID, int quantity,
-                                            Product p) {
+                                            Products p) {
         if (itemsMap.containsKey(productID)) {
             ShoppingCartItem scItem = (ShoppingCartItem) itemsMap
                     .get(productID);
@@ -120,7 +120,7 @@ public class ShoppingCart {
                 .iterator();
         while (iterator.hasNext()) {
             ShoppingCartItem anotherSCItem = iterator.next();
-            Product product = anotherSCItem.getProduct();
+            Products product = anotherSCItem.getProduct();
             amount += (anotherSCItem.getQuantity() * product.getProductPrice());
         }
 

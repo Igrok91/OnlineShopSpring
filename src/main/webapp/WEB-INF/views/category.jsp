@@ -29,11 +29,11 @@
 							<c:forEach var="subcategories" items="${categories.value}">
 								<c:url var="url" value="/category">
 
-									<c:param name="subcat" value="${subcategories.categoryid}" />
+									<c:param name="subcat" value="${subcategories.idsubCategory}" />
 									<c:param name="categ" value="${categories.key}" />
 								</c:url>
 								<li><a tabindex="-1" href="${url}"><c:out
-											value="${subcategories.productCategory}" /></a></li>
+											value="${subcategories.subCategoryName}" /></a></li>
 							</c:forEach>
 						</ul></li>
 				</c:forEach>
@@ -93,7 +93,7 @@
 					<c:when test="${not empty categoryProducts}">
 						<c:forEach var="products" items="${categoryProducts}">
 							<c:url var="url" value="/product">
-								<c:param name="productId" value="${products.productId}" />
+								<c:param name="productId" value="${products.idproduct}" />
 							</c:url>
 							<div class="span3">
 								 </br> <a href="${url}">${products.productName}</a>

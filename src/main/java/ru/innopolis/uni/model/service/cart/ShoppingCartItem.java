@@ -1,16 +1,16 @@
 package ru.innopolis.uni.model.service.cart;
 
-import ru.innopolis.uni.model.entityDao.Product;
+import ru.innopolis.uni.model.entityDao.pojo.Products;
 
 /**
  * Created by Igor Ryabtsev on 28.12.2016.
  * Класс представляет элемент покупательской корзины
  */
 public class ShoppingCartItem {
-    private Product product;
+    private Products product;
     private int quantity;
 
-    public ShoppingCartItem(Product p) {
+    public ShoppingCartItem(Products p) {
         product = p;
         quantity = 1;
     }
@@ -35,11 +35,11 @@ public class ShoppingCartItem {
 
 
 
-    public Product getProduct() {
+    public Products getProduct() {
         return product;
     }
 
-    public void setProduct(Product product) {
+    public void setProduct(Products product) {
         this.product = product;
     }
 

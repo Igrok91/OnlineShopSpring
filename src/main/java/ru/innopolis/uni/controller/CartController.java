@@ -3,18 +3,12 @@ package ru.innopolis.uni.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AnonymousAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.context.annotation.SessionScope;
 import org.springframework.web.servlet.ModelAndView;
 import ru.innopolis.uni.model.dao.daoException.DataBaseException;
-import ru.innopolis.uni.model.entityDao.Product;
+import ru.innopolis.uni.model.entityDao.pojo.Products;
 import ru.innopolis.uni.model.service.ProductService;
 import ru.innopolis.uni.model.service.cart.ShoppingCart;
 
@@ -55,13 +49,13 @@ public class CartController {
         Integer productID = new Integer(id);
 
         if (productID != null) {
-            Product p = null;
+            Products p = null;
             try {
                 p = service.getProductDetails(productID);
             } catch (DataBaseException e) {
-                log.warn(e.message());
-                return "error";
+                e.printStackTrace();
             }
+
             cart.add(productID, p);
 
         }
@@ -77,13 +71,13 @@ public class CartController {
      */
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public String updateProduct(Model model, @RequestParam("productid")int producr_id, @RequestParam("quantity") int quantity) {
-        Product product = null;
-        try {
+        Products product = null;
+      /*  try {
             product = (Product) service.getProductDetails(producr_id);
         } catch (DataBaseException e) {
             log.warn(e.message());
            return "error";
-        }
+        }*/
 
         ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
              if (cart != null) {

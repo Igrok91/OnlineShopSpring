@@ -3,9 +3,6 @@
          import org.junit.Before;
          import org.junit.Test;
          import ru.innopolis.uni.model.dao.ProductDao;
-         import ru.innopolis.uni.model.entityDao.Category;
-         import ru.innopolis.uni.model.entityDao.Product;
-         import ru.innopolis.uni.model.entityDao.SubCategory;
 
          import java.util.List;
 

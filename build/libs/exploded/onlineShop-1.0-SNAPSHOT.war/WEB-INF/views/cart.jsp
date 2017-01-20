@@ -250,14 +250,14 @@ body {
 
 								<tr>
 									<td class="cart_product"><a href=""><img alt="${products.productName}"
-																			 src="images/small/${products.productId}.jpg" /></a></td>
+																			 src="images/small/${products.idproduct}.jpg" /></a></td>
 									<td class="cart_description">
 										<h4>
 											<a href=""><c:out value="${products.productName}" /></a>
 										</h4> </br>
 										<p class="info">
 											Category :
-											<c:out value="${products.categoryName.categoryid}" />
+											<c:out value="${products.categoryByCategoryName.idcategory}" />
 										</p>
 										<p class="info">
 											Manufacturer:
@@ -268,7 +268,7 @@ body {
 										<div class="form-horizontal">
 											<form action="update" method="POST">
 												<input type="hidden" name="productid"
-													value="<c:out value="${products.productId}"/>" />
+													value="<c:out value="${products.idproduct}"/>" />
 												<input type="number" name="quantity" size="2" maxlength="2"
 													class="input-mini" max="10" min="1"
 													value="<c:out value="${cart_products.quantity}"/>" />
@@ -285,7 +285,7 @@ body {
 									<td class="cart_delete">
 										<form action="remove" method="POST">
 											<input type="hidden" name="pid"
-												value="<c:out value="${product.productId}"/>" />
+												value="<c:out value="${product.idproduct}"/>" />
 											<button type="submit"
 												class="cart_quantity_delete btn btn-primary">
 												<i class="fa fa-times" id="remove"></i>

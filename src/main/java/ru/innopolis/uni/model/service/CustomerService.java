@@ -17,7 +17,7 @@ import ru.innopolis.uni.model.dao.impl.CustomerDaoImpl;
 public class CustomerService implements CustomerDao {
     @Autowired
     private CustomerDaoImpl customerDao;
-    @Autowired
+   // @Autowired
     private BCryptPasswordEncoder bcryptEncoder;
 
     public CustomerService(){

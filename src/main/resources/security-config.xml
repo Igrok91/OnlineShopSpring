@@ -6,9 +6,7 @@
              xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                         http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
                         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-
-
-   <context:property-placeholder location="classpath:jdbc.properties" />
+    <context:property-placeholder location="classpath:jdbc.properties" />
 
 
     <beans:bean id="dataSource"
@@ -18,6 +16,8 @@
         <beans:property name="username" value="${jdbc.username}"/>
         <beans:property name="password" value="${jdbc.password}"/>
     </beans:bean>
+
+
     <beans:bean name="bcryptEncoder"
                 class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
         <beans:constructor-arg name="strength" value="6"/>
@@ -35,7 +35,7 @@
 
         <logout  logout-success-url="/login-register?regStatus=Success"/>
         <csrf/>
-        <remember-me/>
+    <!--    <remember-me/>-->
 
     </http>
 

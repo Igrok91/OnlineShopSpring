@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="online_shop@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="online_shop">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="is_student"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="sakila"/>
+    <schema id="8" parent="1" name="security"/>
+    <schema id="9" parent="1" name="sys"/>
+    <schema id="10" parent="1" name="world"/>
+    <table id="11" parent="2" name="category"/>
+    <table id="12" parent="2" name="order"/>
+    <table id="13" parent="2" name="products"/>
+    <table id="14" parent="2" name="subcategory"/>
+    <table id="15" parent="2" name="user"/>
+    <table id="16" parent="2" name="user_roles"/>
+    <table id="17" parent="2" name="users"/>
+    <table id="18" parent="2" name="usertest"/>
+    <column id="19" parent="11" name="idcategory">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="20" parent="11" name="productCategory">
+      <Position>2</Position>
+      <DataType>varchar(95)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="21" parent="11" name="PRIMARY">
+      <ColNames>idcategory</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="22" parent="12" name="idOrder">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="23" parent="12" name="userName">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="12" name="product">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="12" name="mobileNumber">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="12" name="address">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="27" parent="12" name="product_id_idx">
+      <ColNames>product</ColNames>
+    </index>
+    <index id="28" parent="12" name="user_id_idx">
+      <ColNames>userName</ColNames>
+    </index>
+    <key id="29" parent="12" name="PRIMARY">
+      <ColNames>idOrder</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="30" parent="12" name="user_id">
+      <ColNames>userName</ColNames>
+      <RefSchemaName>online_shop</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>iduser</RefColNames>
+      <OnUpdate>no-action</OnUpdate>
+      <OnDelete>no-action</OnDelete>
+    </foreign-key>
+    <foreign-key id="31" parent="12" name="product_id">
+      <ColNames>product</ColNames>
+      <RefSchemaName>online_shop</RefSchemaName>
+      <RefTableName>products</RefTableName>
+      <RefColNames>idproduct</RefColNames>
+      <OnUpdate>no-action</OnUpdate>
+      <OnDelete>no-action</OnDelete>
+    </foreign-key>
+    <column id="32" parent="13" name="idproduct">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="33" parent="13" name="productName">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="13" name="productPrice">
+      <Position>3</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="13" name="description">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="36" parent="13" name="categoryName">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="13" name="subCategory">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="13" name="productManufacturer">
+      <Position>7</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <index id="39" parent="13" name="category_idx">
+      <ColNames>categoryName</ColNames>
+    </index>
+    <index id="40" parent="13" name="subcategory_idx">
+      <ColNames>subCategory</ColNames>
+    </index>
+    <key id="41" parent="13" name="PRIMARY">
+      <ColNames>idproduct</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="42" parent="13" name="category">
+      <ColNames>categoryName</ColNames>
+      <RefSchemaName>online_shop</RefSchemaName>
+      <RefTableName>category</RefTableName>
+      <RefColNames>idcategory</RefColNames>
+      <OnUpdate>no-action</OnUpdate>
+      <OnDelete>no-action</OnDelete>
+    </foreign-key>
+    <foreign-key id="43" parent="13" name="subcategory">
+      <ColNames>subCategory</ColNames>
+      <RefSchemaName>online_shop</RefSchemaName>
+      <RefTableName>subcategory</RefTableName>
+      <RefColNames>idsubCategory</RefColNames>
+      <OnUpdate>no-action</OnUpdate>
+      <OnDelete>no-action</OnDelete>
+    </foreign-key>
+    <column id="44" parent="14" name="idsubCategory">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="45" parent="14" name="subCategoryName">
+      <Position>2</Position>
+      <DataType>varchar(95)|0</DataType>
+    </column>
+    <column id="46" parent="14" name="category_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="47" parent="14" name="category_id_idx">
+      <ColNames>category_id</ColNames>
+    </index>
+    <key id="48" parent="14" name="PRIMARY">
+      <ColNames>idsubCategory</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="49" parent="14" name="category_id">
+      <ColNames>category_id</ColNames>
+      <RefSchemaName>online_shop</RefSchemaName>
+      <RefTableName>category</RefTableName>
+      <RefColNames>idcategory</RefColNames>
+      <OnUpdate>no-action</OnUpdate>
+      <OnDelete>no-action</OnDelete>
+    </foreign-key>
+    <column id="50" parent="15" name="iduser">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="51" parent="15" name="userName">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="52" parent="15" name="password">
+      <Position>3</Position>
+      <DataType>varchar(220)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="15" name="email">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="15" name="phoneNumber">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="55" parent="15" name="active">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="56" parent="15" name="PRIMARY">
+      <ColNames>iduser</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="57" parent="16" name="user_role_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="58" parent="16" name="username">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="16" name="role">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="60" parent="16" name="fk_username_idx">
+      <ColNames>username</ColNames>
+    </index>
+    <key id="61" parent="16" name="PRIMARY">
+      <ColNames>user_role_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="62" parent="16" name="fk_username">
+      <ColNames>username</ColNames>
+      <RefSchemaName>online_shop</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>username</RefColNames>
+      <OnUpdate>no-action</OnUpdate>
+      <OnDelete>no-action</OnDelete>
+    </foreign-key>
+    <column id="63" parent="17" name="username">
+      <Position>1</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="17" name="password">
+      <Position>2</Position>
+      <DataType>varchar(220)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="17" name="enabled">
+      <Position>3</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <key id="66" parent="17" name="PRIMARY">
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="67" parent="18" name="iduserTest">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="18" name="password">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="69" parent="18" name="email">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="70" parent="18" name="PRIMARY">
+      <ColNames>iduserTest</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
