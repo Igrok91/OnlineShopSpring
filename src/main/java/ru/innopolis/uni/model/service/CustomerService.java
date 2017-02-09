@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.innopolis.uni.model.dao.CustomerDao;
 import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.dao.impl.CustomerDaoImpl;
@@ -14,10 +15,11 @@ import ru.innopolis.uni.model.dao.impl.CustomerDaoImpl;
  * Класс определят сервис для получения данных из БД и вычисления Бизнес логики
  */
 @Service
+@Transactional
 public class CustomerService implements CustomerDao {
     @Autowired
     private CustomerDaoImpl customerDao;
-   // @Autowired
+    @Autowired
     private BCryptPasswordEncoder bcryptEncoder;
 
     public CustomerService(){
@@ -29,14 +31,11 @@ public class CustomerService implements CustomerDao {
         return customerDao.registerCustomer(email,bcryptEncoder.encode(password));
     }
 
-    @Override
-    public boolean verifyUser(String email, String password) throws DataBaseException {
-        return customerDao.verifyUser(email,bcryptEncoder.encode(password));
-    }
 
-    private String crypt(String password) {
+
+/*    private String crypt(String password) {
         String md5Hex = DigestUtils.md5Hex(password);
         return  md5Hex;
-    }
+    }*/
 
 }

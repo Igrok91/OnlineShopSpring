@@ -21,6 +21,8 @@
         <class>ru.innopolis.uni.model.entityDao.entityJPA.ProductsEntity</class>
         <class>ru.innopolis.uni.model.entityDao.entityJPA.SubcategoryEntity</class>
         <class>ru.innopolis.uni.model.entityDao.entityJPA.UserEntity</class>
+        <class>ru.innopolis.uni.model.entityDao.entityJPA.UserRolesEntity</class>
+        <class>ru.innopolis.uni.model.entityDao.entityJPA.UsersEntity</class>
 
         <properties>
           <!--  <property name="javax.persistence.schema-generation-action" value="drop-and-create"/>-->

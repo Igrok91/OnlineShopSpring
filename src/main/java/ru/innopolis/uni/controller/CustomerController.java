@@ -118,30 +118,4 @@ public class CustomerController {
 
     }
 
-    /**
-     * Пользователь входит в систему, проверка данных
-     * @param model
-     * @param email
-     * @param password
-     * @return
-     */
-     @RequestMapping(value = "/login", method = {RequestMethod.POST, RequestMethod.GET})
-    public String checkLogin(Model model, @RequestParam(value = "username")String email ,
-                             @RequestParam(value="password")String password){
-        boolean flag = false;
-        try {
-            flag = customerService.verifyUser(email, password);
-        } catch (DataBaseException e) {
-            log.warn(e.message());
-            return "error";
-        }
-        if (flag) {
-            httpSession.setAttribute("email", email);
-            return  "final_checkout";
-        } else {
-            model.addAttribute("regStatus", "Fail");
-           return "login";
-        }
-    }
-
 }

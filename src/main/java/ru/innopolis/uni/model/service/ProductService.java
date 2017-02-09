@@ -19,6 +19,7 @@ import java.util.List;
 @Service
 @Transactional
 public class ProductService  implements ProductDao{
+
     @Autowired
     private ProductDaoImpl productDao;
 
@@ -38,27 +39,12 @@ public class ProductService  implements ProductDao{
         return productDao.getProductDetails(idproduct);
     }
 
-    @Override
-    public List<Category> getAllCategories() throws DataBaseException {
-        return productDao.getAllCategories();
-    }
-
-    @Override
-    public List<Subcategory> getSubCategory(Category category) throws DataBaseException {
-        return productDao.getSubCategory(category);
-    }
 
     @Override
     public List<Products> getProductBySubCategory(String subCategory) throws DataBaseException {
         return productDao.getProductBySubCategory(subCategory);
     }
 
-    @Override
-    public List<Products> getProductByCategory(String category) throws DataBaseException {
-        return productDao.getProductByCategory(category);
-    }
-
-    @Override
     public String getCategoryBySubCategory(String subCategory) throws DataBaseException {
         return productDao.getCategoryBySubCategory(subCategory);
     }

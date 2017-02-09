@@ -2,9 +2,15 @@ package ru.innopolis.uni.model.dao.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ru.innopolis.uni.database.DBConnection;
+import org.springframework.beans.factory.annotation.Autowired;
 import ru.innopolis.uni.model.dao.CustomerDao;
 import ru.innopolis.uni.model.dao.daoException.DataBaseException;
+import ru.innopolis.uni.model.entityDao.entityJPA.UserEntity;
+import ru.innopolis.uni.model.entityDao.entityJPA.UserRolesEntity;
+import ru.innopolis.uni.model.entityDao.entityJPA.UsersEntity;
+import ru.innopolis.uni.model.repository.UserRepository;
+import ru.innopolis.uni.model.repository.UserRolesRepository;
+import ru.innopolis.uni.model.repository.UsersRepository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -18,8 +24,12 @@ import java.sql.SQLException;
 
 public class CustomerDaoImpl implements CustomerDao {
     private static Logger log = LoggerFactory.getLogger(CustomerDaoImpl.class);
-    private Connection conn;
-
+    @Autowired
+    private UserRepository userRepository;
+    @Autowired
+    private UserRolesRepository userRolesRepository;
+    @Autowired
+    private UsersRepository usersRepository;
 
 
     /**\
@@ -31,86 +41,22 @@ public class CustomerDaoImpl implements CustomerDao {
      */
     @Override
     public boolean registerCustomer(String email, String password) throws DataBaseException{
-        PreparedStatement ps = null;
+        UserEntity userEntity = new UserEntity();
+        userEntity.setEmail(email);
+        userEntity.setPassword(password);
+        UsersEntity usersEntity = new UsersEntity();
+        usersEntity.setUsername(email);
+        usersEntity.setPassword(password);
+        usersEntity.setEnabled((byte) 1);
+        UserRolesEntity entity = new UserRolesEntity();
+        entity.setRole("ROLE_USER");
+        entity.setUsersEntity(usersEntity);
+       if ( userRepository.save(userEntity) != null && usersRepository.save(usersEntity) != null
+               && userRolesRepository.save(entity) != null) {
+           return true;
+       }
+       return false;
 
-        try {
-            conn = DBConnection.getConnecton();
-            String sql = "insert into user(password, email) values(?,?)";
-            String sqlS = "insert into users(username, password) values(?,?)";
-            String sqlRole = "insert into user_roles(username,role) values(?,?)";
-            ps = conn.prepareStatement(sql);
-            ps.setString(2, email);
-            ps.setString(1, password);
-
-            int result = ps.executeUpdate();
-            ps = conn.prepareStatement(sqlS);
-            ps.setString(2, password);
-            ps.setString(1, email);
-            int resultS = ps.executeUpdate();
-
-            ps = conn.prepareStatement(sqlRole);
-            ps.setString(2, "ROLE_USER");
-            ps.setString(1, email);
-            int resultRole = ps.executeUpdate();
-            if (result > 0 && resultS > 0 &&resultRole > 0) {
-                return true;
-            }
-        } catch (Exception e) {
-            log.warn(e.getMessage());
-            throw new DataBaseException();
-        } finally {
-            if (ps != null) {
-                try {
-                    ps.close();
-                } catch (SQLException e) {
-                    log.warn(e.getMessage());
-                }
-            }
-
-        }
-        return false;
     }
-
-
-    /**
-     *  This method is used to verify if the customer is registered or not
-     * @param email Данные пользователя
-     * @param password Данные пользователя
-     * @return <tt>true</tt> Если данные пользователя совпадают с значением в БД
-     * @throws DataBaseException
-     */
-    @Override
-    public boolean verifyUser(String email, String password)  throws DataBaseException{
-        conn = DBConnection.getConnecton();
-        PreparedStatement ps = null;
-        String sql = "select iduser from user where email=? AND password=?";
-
-        try {
-            ps = conn.prepareStatement(sql);
-            ps.setString(1, email);
-            ps.setString(2, password);
-            ResultSet rs = ps.executeQuery();
-
-            while (rs.next()) {
-                if (rs.getString("iduser") != null) {
-                    return true;
-                }
-            }
-        } catch (Exception e) {
-            log.warn(e.getMessage());
-            throw new DataBaseException();
-        } finally {
-            if (ps != null) {
-                try {
-                    ps.close();
-                } catch (SQLException e) {
-                    log.warn(e.getMessage());
-                }
-            }
-
-        }
-        return false;
-    }
-
 
 }

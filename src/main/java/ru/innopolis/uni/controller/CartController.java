@@ -72,12 +72,12 @@ public class CartController {
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public String updateProduct(Model model, @RequestParam("productid")int producr_id, @RequestParam("quantity") int quantity) {
         Products product = null;
-      /*  try {
-            product = (Product) service.getProductDetails(producr_id);
+        try {
+            product = (Products) service.getProductDetails(producr_id);
         } catch (DataBaseException e) {
             log.warn(e.message());
            return "error";
-        }*/
+        }
 
         ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
              if (cart != null) {
@@ -117,14 +117,6 @@ public class CartController {
     public ModelAndView accesssDenied() {
 
         ModelAndView model = new ModelAndView();
-
-        /*//check if user is login
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        if (!(auth instanceof AnonymousAuthenticationToken)) {
-            UserDetails userDetail = (UserDetails) auth.getPrincipal();
-            model.addObject("username", userDetail.getUsername());
-        }
-*/
         model.setViewName("error");
         return model;
 

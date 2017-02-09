@@ -45,16 +45,6 @@ public class CategoryController {
     public String getCategory(Model model, @RequestParam("subcat")String subCategory,
                               @RequestParam("categ")String categoryName) throws Exception {
 
-        if (categoryName != null) {
-            List<Products> productsCategoryList = null;
-            try {
-                productsCategoryList = service.getProductByCategory(categoryName);
-            } catch (DataBaseException e) {
-                log.warn(e.message());
-                return "error";
-            }
-            model.addAttribute("productByCategory", productsCategoryList);
-        }
 
         // Если пользователь запрашивает поиск в подкатегории
         if (subCategory != null) {

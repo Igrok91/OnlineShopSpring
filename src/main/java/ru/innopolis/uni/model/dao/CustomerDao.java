@@ -16,13 +16,6 @@ public interface CustomerDao {
      */
     boolean registerCustomer(String email, String password)  throws DataBaseException;
 
-    /**
-     *  This method is used to verify if the customer is registered or not
-     * @param email Данные пользователя
-     * @param password Данные пользователя
-     * @return <tt>true</tt> Если данные пользователя совпадают с значением в БД
-     * @throws DataBaseException
-     */
-    boolean verifyUser(String email, String password)  throws DataBaseException;
+
 
 }

@@ -5,8 +5,7 @@ import ma.glasnost.orika.MapperFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.method.P;
-import ru.innopolis.uni.database.DBConnection;
+
 import ru.innopolis.uni.model.dao.ProductDao;
 import ru.innopolis.uni.model.dao.daoException.DataBaseException;
 import ru.innopolis.uni.model.entityDao.pojo.Category;
@@ -82,24 +81,7 @@ public class ProductDaoImpl implements ProductDao {
      * @return List of category
      * @throws DataBaseException
      */
-    @Override
-    public List<Category> getAllCategories()  throws DataBaseException {
-        return null;
-    }
 
-    //
-
-    /**
-     * Method to get all the available Subcategories under a ECategory
-     * @param category
-     * @return List of subcategory
-     * @throws DataBaseException
-     */
-    @Override
-    public List<Subcategory> getSubCategory(Category category) throws DataBaseException  {
-
-        return null;
-    }
 
     //
 
@@ -119,51 +101,6 @@ public class ProductDaoImpl implements ProductDao {
             productsList.add(products);
         }
         return productsList;
-    }
-
-    /**
-     * Method to get all the Products based on specified ECategory
-     * @param category
-     * @return
-     * @throws DataBaseException
-     */
-    @Override
-    public List<Products> getProductByCategory(String category)  throws DataBaseException {
-
-
-       /* Connection conn = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        String sql;
-        conn = DBConnection.getConnecton();
-        sql = "select idproduct, productName,productPrice,description,categoryName," +
-                "productManufacturer from products where categoryName=?";
-        products = new ArrayList<Products>();
-        try {
-            ps = conn.prepareStatement(sql);
-            ps.setString(1, category);
-            rs = ps.executeQuery();
-            while (rs.next()) {
-                Category cat = new Category();
-                cat.setProductCategory(rs.getString(5));
-                Products p = new Products(rs.getInt(1), rs.getString(2),
-                        rs.getDouble(3), rs.getString(4),cat ,
-                        rs.getString(6));
-                products.add(p);
-            }
-        } catch (Exception e) {
-            log.warn(e.getMessage());
-            throw new DataBaseException();
-        } finally {
-                if (rs != null) {
-                    try {
-                        rs.close();
-                    } catch (SQLException e) {
-                        log.warn(e.getMessage());
-                    }
-                }
-        }*/
-        return products;
     }
 
 
@@ -204,7 +141,7 @@ public class ProductDaoImpl implements ProductDao {
             }
 
         }*/
-        return categoryName;
+        return null;
     }
 
 }

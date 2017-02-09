@@ -140,13 +140,13 @@
 									<td class="cart_description">
 										<h4>
 											<c:url var="url" value="/product">
-												<c:param name="productId" value="${products.productId}" />
+												<c:param name="productId" value="${products.idproduct}" />
 											</c:url>
 											<a href="${url}"><c:out value="${products.productName}" /></a>
 										</h4>
 										<p class="info">
 											Category:
-											<c:out value="${products.categoryName.categoryid}" />
+											<c:out value="${products.categoryByCategoryName.idcategory}" />
 										</p>
 										<p class="info">
 											Manufacturer:
